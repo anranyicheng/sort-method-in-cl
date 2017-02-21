@@ -23,7 +23,7 @@
 
 (defun sort-number(lst)      ;    列表元素（数字）
   (let ((temp 0)
-	(list (copy-list lst)))  ;使用copy-list 可以让原列表不受到损害
+	(list (copy-list lst)))  ;使用copy-list 可以让原列表不受到损害(相对于数组的优点）
     (do ((i 0 (1+ i)))
 	((> i (1- (length list))) list)
       (do ((j 0 (1+ j )))
